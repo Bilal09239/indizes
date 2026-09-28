@@ -13,7 +13,6 @@ FROM cte_name ;
 
 -- Ohne INDEX 
 SELECT * FROM PERSON WHERE first_name = 'Michael';
-VACUUM;
 
 -- Mit INDEX
 CREATE INDEX idx_first_name ON PERSON(first_name);
